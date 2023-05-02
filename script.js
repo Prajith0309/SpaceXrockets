@@ -11,7 +11,6 @@ async function getdata(e){
       };
       let value = await fetch('https://api.spacexdata.com/v4/rockets', options)
     let nectval = await value.json()
-    console.log(nectval)
     const data = document.querySelector('.data-list')
     nectval.forEach((ele) => {
         data.innerHTML += ` 
